@@ -84,6 +84,8 @@
   ["7:00 PM · 23 Nov 2026", "शाम 7:00 बजे · 23 नवंबर 2026"],
   ["A dazzling night of high-energy dance performances and royal feasts.", "ऊर्जा से भरपूर नृत्य प्रस्तुतियों और शाही दावत की एक शानदार रात।"],
   ["View Venue Map", "स्थान का नक्शा देखें"],
+  ["View Map", "स्थान का नक्शा देखें"],
+  ["View Invite", "निमंत्रण देखें"],
   ["Morning Ritual", "सुबह की रस्म"],
   ["Haldi Ceremony", "हल्दी की रस्म"],
   ["03:00 PM · 24 Nov 2026", "दोपहर 3:00 बजे · 24 नवंबर 2026"],
@@ -266,8 +268,3 @@
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();
 })();
-
-
-
-
-

@@ -843,25 +843,16 @@ function captureAndDownload() {
         }
     }
 
-    ctx.filter = 'blur(12px) brightness(1.05)';
-    ctx.globalAlpha = 0.12; // Subtle blending so it stays natural, not blurry
-    if (activeSource === 'camera' && isCameraActive) {
-        ctx.drawImage(document.getElementById('webcamVideo'), 0, 0, w, h);
-    } else if (activeSource === 'upload' && uploadedImageObj.src) {
-        ctx.drawImage(uploadedImageObj, 0, 0, w, h);
-    }
-
-    // Reset alpha and filter for the crisp frame overlay
-    ctx.globalAlpha = 1.0;
+    // Reset filter for crisp frame overlay
     ctx.filter = 'none';
 
-    // 4. Draw the Royal Prop Frame Overlay on top
+    // 3. Draw the Royal Prop Frame Overlay on top
     const propElement = document.getElementById('propOverlayImg');
     if (propElement) {
         ctx.drawImage(propElement, 0, 0, w, h);
     }
 
-    // 5. Trigger High-Res Download
+    // 4. Trigger High-Res Download
     const dataURL = canvas.toDataURL('image/png', 1.0);
     const downloadLink = document.createElement('a');
     downloadLink.download = 'Abhishek_Priya_Wedding_Memory.png';
@@ -871,9 +862,8 @@ function captureAndDownload() {
     document.body.removeChild(downloadLink);
 
     statusDiv.style.color = '#27ae60';
-    statusDiv.textContent = tr("High-resolution royal photo downloaded successfully!");
+    statusDiv.textContent = "High-resolution royal photo downloaded successfully!";
 }
-
 (function () {
     let hidden = false;
     function hidePreloader() {

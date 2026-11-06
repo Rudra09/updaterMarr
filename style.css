@@ -948,6 +948,11 @@ header.hero {
   position: relative;
 }
 
+.hero-bg 
+{
+  top:45px;
+}
+
 .hero .subtitle {
   font-size: clamp(1rem, 2.2vw, 1.4rem);
   letter-spacing: 4px;
@@ -3089,9 +3094,9 @@ footer .hashtag {
   /*  Square ratio  */
   margin: 15px auto;
 
-  background-size: calc();
+  /* background-size: calc(); */
   /*  Ensures the whole couple image fits without cropping  */
-  background-image: url("assets/final-Photoroom.png");
+  background-image: url("assets/final-Photoroom.webp");
   /*  Put your default couple image here  */
   border-radius: 14px;
   overflow: hidden;

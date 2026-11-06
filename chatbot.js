@@ -6,7 +6,7 @@
     phoneNumber: '+917014457411',
     weddingDate: new Date('November 25, 2026 20:00:00'),
     mapSangeetHaldi: 'https://www.google.com/maps/search/?api=1&query=Vinay+Vaatika+Bhatta+Colony+Hanumangarh+Rajasthan+335512',
-    mapWedding: 'https://www.google.com/maps/place/?q=place_id:ChIJL5n6b1DzFjkRBq65AoYZm3I'
+    mapWedding: 'https://www.google.com/maps?cid=8258222405075971590&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAMYASAF'
   };
 
   const lang = () => (window.getLang ? window.getLang() : 'en');
@@ -26,15 +26,15 @@
       contactWithout: 'For anything else, please contact the family directly. We will be delighted to help 🙏',
       whatsapp: 'Chat on WhatsApp',
       call: 'Call the family',
-      events: 'Here is the wedding schedule 🎉\n\n🎵 Sangeet — 7:00 PM, 23 Nov 2026\n💛 Haldi — 3:00 PM, 24 Nov 2026\n💍 Wedding Ceremony — 8:00 PM, 25 Nov 2026',
-      venue: 'The wedding ceremony is at GM Resort on 25 November 2026 at 8:00 PM 💍\n\nSangeet and Haldi are at Home,Near Vinay Vatika, Bhatta Colony, Hanumangarh, Rajasthan.',
+      events: 'Here is the wedding schedule 🎉\n\n🎵 Sangeet Celebration — 7:00 PM, 23 Nov 2026\n💛 Haldi Ceremony — 03:00 PM, 24 Nov 2026\n💍 Wedding Ceremony — 8:00 PM, 25 Nov 2026',
+      venue: 'The wedding ceremony is at GM Resort on 25 November 2026 at 8:00 PM 💍\n\nSangeet and Haldi take place at Vinay Vaatika, Bhatta Colony, Hanumangarh, Rajasthan.',
       family: "👑 Groom's side — Garg Family\nFather: Mr. Hardeep Kumar Garg\nMother: Mrs. Meenu Garg\n\n👑 Bride's side — Bansal Family\nFather: Mr. Raj Kumar Bansal\nMother: Mrs. Manju Bansal",
       photo: 'Try our Royal Photo Booth 📸 — turn on your camera or upload a photo, then snap & download your memory from the wedding!',
       gallery: 'Our precious memories are in the gallery ✨',
       vows: 'Walk through the 7 sacred vows (Saptapadi) with Abhishek & Priya step by step 🔥\n\nThe 7 Pheres represent nourishment, strength, prosperity, family happiness, progeny, long seasons of togetherness, and lifelong friendship & loyalty!',
       music: 'Tap the golden "🎵 Play Music" button at the bottom-right corner to play the wedding song 🎶',
       thanks: 'You are most welcome! 😊 We eagerly await your blessings and gracious presence 🙏',
-      pdfCard: 'Click below to download the official wedding invitation card PDF:',
+      pdfCard: 'Click below to view or download the official wedding invitation cards:',
       
       howAreYou: "I'm doing wonderful, thank you for asking! 😊 Just busy making sure everything is perfect for Abhishek & Priya's grand wedding. How can I help you today?",
       whoAreYou: "I am your personal wedding assistant, specially here to help you with Abhishek & Priya's celebrations! Ask me about events, venue, or family details.",
@@ -43,10 +43,13 @@
       dressCode: "✨ **Dress Code Suggestion:**\n- For Sangeet & Haldi: Traditional or Festive Ethnic Wear.\n- For Wedding Ceremony: Royal Festive / Traditional Attire.",
       foodInfo: "🍽️ Delicious royal multi-course vegetarian catering, traditional Rajasthani sweets, and grand feasts are arranged across all functions!",
       giftInfo: "🎁 Your gracious presence and heartfelt blessings are the greatest gifts of all for Abhishek & Priya! No other gifts are necessary 🙏",
-      parkingInfo: "🚗 Ample parking space is available at both venues (Home and GM Resort) with valet assistance.",
+      parkingInfo: "🚗 Ample parking space is available at both venues with valet assistance.",
 
-      mapSangeet: 'Sangeet & Haldi map',
-      mapWedding: 'Wedding venue map',
+      mapSangeet: 'Sangeet & Haldi Map',
+      mapWedding: 'Wedding Venue Map',
+      pdfSangeet: 'Download Sangeet PDF',
+      pdfHaldi: 'Download Haldi PDF',
+      pdfWedding: 'Download Wedding PDF',
       goFamily: 'See Family & Friends',
       goPhoto: 'Open Photo Booth',
       goGallery: 'Open Gallery',
@@ -68,7 +71,7 @@
       contactWithout: 'और किसी जानकारी के लिए कृपया सीधे परिवार से संपर्क करें। हमें आपकी मदद करके खुशी होगी 🙏',
       whatsapp: 'WhatsApp पर चैट करें',
       call: 'परिवार को कॉल करें',
-      events: 'विवाह का कार्यक्रम 🎉\n\n🎵 संगीत — शाम 7:00 बजे, 23 नवंबर 2026\n💛 हल्दी — दोपहर 3:00 बजे, 24 नवंबर 2026\n💍 विवाह समारोह — रात 8:00 बजे, 25 नवंबर 2026',
+      events: 'विवाह का कार्यक्रम 🎉\n\n🎵 संगीत समारोह — शाम 7:00 बजे, 23 नवंबर 2026\n💛 हल्दी की रस्म — दोपहर 3:00 बजे, 24 नवंबर 2026\n💍 विवाह समारोह — रात 8:00 बजे, 25 नवंबर 2026',
       venue: 'विवाह समारोह 25 नवंबर 2026 को रात 8:00 बजे जी.एम. रिसॉर्ट में है 💍\n\nसंगीत और हल्दी विनय वाटिका, भट्टा कॉलोनी, हनुमानगढ़, राजस्थान में होंगे।',
       family: '👑 वर पक्ष — गर्ग परिवार\nपिता: श्री हरदीप कुमार गर्ग\nमाता: श्रीमती मीनू गर्ग\n\n👑 वधू पक्ष — बंसल परिवार\nपिता: श्री राज कुमार बंसल\nमाता: श्रीमती मंजू बंसल',
       photo: 'हमारा शाही फोटो बूथ आज़माएँ 📸 — कैमरा चालू करें या फोटो अपलोड करें, फिर विवाह की अपनी याद खींचकर डाउनलोड करें!',
@@ -76,19 +79,22 @@
       vows: 'अभिषेक और प्रिया के साथ सात पवित्र वचन (सप्तपदी) कदम-दर-कदम देखें 🔥\n\nसात फेरे (सप्तपदी) का अर्थ है: अन्न-धन, बल, समृद्धि, पारिवारिक सुख, संतान, स्वास्थ्य और जीवनभर की अटूट मित्रता व वफादारी का वचन!',
       music: 'पेज के नीचे दाईं ओर सुनहरे "🎵 संगीत चलाएँ" बटन को दबाकर विवाह का गीत चलाएँ 🎶',
       thanks: 'आपका स्वागत है! 😊 हमें आपके आशीर्वाद और गरिमामयी उपस्थिति की प्रतीक्षा है 🙏',
-      pdfCard: 'विवाह का आधिकारिक आमंत्रण कार्ड (PDF) डाउनलोड करने के लिए नीचे क्लिक करें:',
+      pdfCard: 'विवाह के आधिकारिक आमंत्रण कार्ड (PDF) डाउनलोड करने के लिए नीचे क्लिक करें:',
       
       howAreYou: "मैं एकदम ठीक हूँ, पूछने के लिए धन्यवाद! 😊 बस अभिषेक और प्रिया के विवाह की तैयारियों में व्यस्त हूँ। बताइए, मैं आपकी क्या सहायता कर सकता हूँ?",
       whoAreYou: "मैं आपका पर्सनल वेडिंग असिस्टेंट हूँ, जो अभिषेक और प्रिया के विवाह उत्सव में आपकी मदद के लिए यहाँ हूँ!",
       whatDoing: "मैं मेहमानों की मदद कर रहा हूँ और 25 नवंबर 2026 के विवाह समारोह की तैयारियों पर नजर रख रहा हूँ। बताइए, आपको क्या जानना है?",
-      meaningOfShadi: "भारतीय विवाह केवल दो लोगों का नहीं, बल्कि दो परिवारों और दो आत्माओं का पवित्र मिलन है, जो सात फेरों और अग्नि को साक्षी रखकर सात जन्मों के लिए अटूट बंधन में बंधते हैं। ✨",
-      dressCode: "✨ **ड्रेस कोड सुझाव:**\n- संगीत और हल्दी के लिए: पारंपरिक या फेस्टिव एथनिक वस्त्र।\n- विवाह समारोह के लिए: रॉयल एथनिक / ट्रेडिशनल पोशाक (गोल्ड, मैरून या हमारी थीम से मिलते-जुलते रंग)।",
+      meaningOfShadi: "भारतीय विवाह केवल दो लोगों का नहीं, बल्कि दो परिवारों और दो आत्माओं का पवित्र मिलन है, जो सात फेरे और अग्नि को साक्षी रखकर सात जन्मों के लिए अटूट बंधन में बंधते हैं। ✨",
+      dressCode: "✨ **ड्रेस कोड सुझाव:**\n- संगीत और हल्दी के लिए: पारंपरिक या फेस्टिव एथनिक वस्त्र।\n- विवाह समारोह के लिए: रॉयल एथनिक / ट्रेडिशनल पोशाक।",
       foodInfo: "🍽️ सभी कार्यक्रमों में शाही शाकाहारी भोजन, पारंपरिक राजस्थानी मिठाइयाँ और शानदार खान-पान की व्यवस्था की गई है!",
       giftInfo: "🎁 अभिषेक और प्रिया के लिए आपकी उपस्थिति और हार्दिक आशीर्वाद ही सबसे बड़ा उपहार है! किसी अन्य उपहार की आवश्यकता नहीं है 🙏",
-      parkingInfo: "🚗 दोनों वेन्यू (विनय वाटिका और जी.एम. रिसॉर्ट) पर पार्किंग और वैले पार्किंग की पर्याप्त व्यवस्था है।",
+      parkingInfo: "🚗 दोनों वेन्यू पर पार्किंग और वैले पार्किंग की पर्याप्त व्यवस्था है।",
 
       mapSangeet: 'संगीत और हल्दी का नक्शा',
       mapWedding: 'विवाह स्थल का नक्शा',
+      pdfSangeet: 'संगीत आमंत्रण (PDF)',
+      pdfHaldi: 'हल्दी आमंत्रण (PDF)',
+      pdfWedding: 'विवाह आमंत्रण (PDF)',
       goFamily: 'परिवार और मित्र देखें',
       goPhoto: 'फोटो बूथ खोलें',
       goGallery: 'गैलरी खोलें',
@@ -166,8 +172,8 @@
   ];
 
   const CHIPS = {
-    en: [['📅 Schedule', 'schedule'], ['📍 Venue', 'venue'], ['📥 Download Card', 'pdf'],
-         ['👨‍👩‍👧 Family', 'family'], ['📸 Photo booth', 'photo'], ['📞 Contact', 'contact']],
+    en: [['📅 Schedule', 'schedule'], ['📍 Venue', 'venue'], ['📥 Download Cards', 'pdf'],
+         ['👨‍👩‍👧 Family', 'family'], ['📸 Photo Booth', 'photo'], ['📞 Contact', 'contact']],
     hi: [['📅 कार्यक्रम', 'कार्यक्रम'], ['📍 स्थान', 'स्थान'], ['📥 कार्ड डाउनलोड', 'pdf'],
          ['👨‍👩‍👧 परिवार', 'परिवार'], ['📸 फोटो बूथ', 'फोटो बूथ'], ['📞 संपर्क', 'संपर्क']]
   };
@@ -219,9 +225,8 @@
     'dobroe utro': 'दोब्रोए उत्त्रो (सुप्रभात)'
   };
 
- function formatGreetingText(q, isHi) {
+  function formatGreetingText(q, isHi) {
     let cleanText = q.trim();
-    // Har word ka pehla letter capital karega aur 'ram' ko hamesha 'Ram' banayega
     cleanText = cleanText.replace(/\b[a-zA-Z]/g, l => l.toUpperCase());
     cleanText = cleanText.replace(/\bram\b/gi, 'Ram');
 
@@ -258,7 +263,7 @@
 
   function build() {
     const css = document.createElement('style');
-   css.textContent = `
+    css.textContent = `
 #wbot-fab{position:fixed;left:18px;bottom:22px;z-index:9998;width:56px;height:56px;border-radius:50%;border:2px solid #fff;cursor:pointer;
 background:linear-gradient(135deg,#d4af37,#ffd700);color:#58181f;font-size:26px;line-height:1;
 box-shadow:0 6px 20px rgba(88,24,31,0.45);display:flex;align-items:center;justify-content:center;transition:transform .25s ease;}
@@ -288,7 +293,6 @@ opacity:0;transform:translateY(14px) scale(.97);pointer-events:none;transition:o
 @keyframes wbot-mic-pulse{0%{transform:scale(1);}100%{transform:scale(1.25);}}
 #wbot-send{border:0;border-radius:16px;background:#58181f;color:#ffd700;padding:0 10px;font-weight:700;cursor:pointer;font-family:inherit;height:30px;font-size:12px;}
 
-/* Mobile Optimization */
 @media (max-width:480px){
   #wbot-fab{width:48px;height:48px;font-size:24px;bottom:18px;left:14px}
   #wbot-panel{left:10px;bottom:76px;width:calc(100vw - 20px);max-width:none}
@@ -316,7 +320,6 @@ opacity:0;transform:translateY(14px) scale(.97);pointer-events:none;transition:o
     const closeBtn = panel.querySelector('#wbot-head button');
     let greeted = false;
 
-    // Speech Recognition setup (Voice-to-Text)
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
     if (SpeechRecognition) {
       const recognition = new SpeechRecognition();
@@ -354,7 +357,7 @@ opacity:0;transform:translateY(14px) scale(.97);pointer-events:none;transition:o
         input.placeholder = S().placeholder;
       };
     } else {
-      micBtn.style.display = 'none'; // Hide mic if browser doesn't support it
+      micBtn.style.display = 'none';
     }
 
     function add(who, text, isTyping = false) {
@@ -375,16 +378,34 @@ opacity:0;transform:translateY(14px) scale(.97);pointer-events:none;transition:o
         const d = add('bot', ans.text);
         
         if (ans.action === 'pdf') {
-          const b = document.createElement('button');
-          b.className = 'wbot-link';
-          b.type = 'button';
-          b.textContent = lang() === 'hi' ? '📥 कार्ड डाउनलोड करें (PDF)' : '📥 Download Card (PDF)';
-          b.onclick = () => {
-            const mainPdfBtn = document.getElementById('downloadPdfBtn');
-            if (mainPdfBtn) mainPdfBtn.click(); else window.print();
-          };
+          const sText = lang() === 'hi' ? '📥 संगीत आमंत्रण (PDF)' : '📥 Sangeet Invite';
+          const hText = lang() === 'hi' ? '📥 हल्दी आमंत्रण (PDF)' : '📥 Haldi Invite';
+          const wText = lang() === 'hi' ? '📥 विवाह आमंत्रण (PDF)' : '📥 Wedding Invite';
+
+          const b1 = document.createElement('a');
+          b1.className = 'wbot-link';
+          b1.href = 'assets/invitepdf/Sangeet.pdf';
+          b1.download = "";
+          b1.textContent = sText;
+
+          const b2 = document.createElement('a');
+          b2.className = 'wbot-link';
+          b2.href = 'assets/invitepdf/Haldi.pdf';
+          b2.download = "";
+          b2.textContent = hText;
+
+          const b3 = document.createElement('a');
+          b3.className = 'wbot-link';
+          b3.href = 'assets/invitepdf/Wedding.pdf';
+          b3.download = "";
+          b3.textContent = wText;
+
           d.appendChild(document.createElement('br'));
-          d.appendChild(b);
+          d.appendChild(b1);
+          d.appendChild(document.createElement('br'));
+          d.appendChild(b2);
+          d.appendChild(document.createElement('br'));
+          d.appendChild(b3);
         }
 
         (ans.links || []).forEach(([label, href]) => {

@@ -436,7 +436,7 @@ setInterval(() => {
     if (squadTab && squadTab.classList.contains('active')) {
         showSquadSlide(currentSquadIndex + 1);
     }
-}, 60000);
+}, 8000);
 
 //AUDIO
 // Background Music Player Control

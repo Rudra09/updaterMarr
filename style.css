@@ -524,7 +524,7 @@ nav {
 
 .nav-logo {
   font-family: "Playfair Display", serif;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   letter-spacing: 2px;
   color: var(--deep-maroon);
   font-weight: 700;
@@ -3772,7 +3772,7 @@ html.lang-hi .gold-gradient
 html.lang-hi .nav-logo,
 html.lang-hi a.nav-logo {
     font-family: 'Playfair Display', 'Cinzel', serif !important;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 700 !important;
      color: var(--deep-maroon);
     letter-spacing: 1.5px !important;
@@ -3784,6 +3784,13 @@ letter-spacing: 2px;
   
   
 }
+
+html.lang-hi .nav-links
+{
+  margin-top: 5px;
+}
+
+
 
 
 

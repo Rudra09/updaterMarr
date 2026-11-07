@@ -430,13 +430,13 @@ function currentSquadSlide(index) {
     showSquadSlide(index);
 }
 
-// Auto slide squad every 5 seconds if tab is active
+// Auto slide squad every 10 seconds if tab is active
 setInterval(() => {
     const squadTab = document.getElementById('tab-squad');
     if (squadTab && squadTab.classList.contains('active')) {
         showSquadSlide(currentSquadIndex + 1);
     }
-}, 8000);
+}, 10000);
 
 //AUDIO
 // Background Music Player Control

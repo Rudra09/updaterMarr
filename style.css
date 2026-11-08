@@ -3915,7 +3915,7 @@ html.lang-hi .cursive-name, html.lang-hi .hero-tagline { line-height: 1.4; } */
 @media (max-width: 500px) {
   html.lang-hi #modalDownloadBtn
   {
-    padding:3px;
+    padding:4px;
     line-height: normal;
   }
   .invite-modal-footer

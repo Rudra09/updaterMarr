@@ -986,7 +986,6 @@ function downloadInvitationPDF() {
 }
 
 // Dynamic Text Update Helper (Integrated with your existing language toggle)
-
 const pdfBtnText = document.querySelector('.pdf-btn-text');
 if (pdfBtnText) {
     pdfBtnText.textContent = currentLang === 'hi' 
@@ -995,8 +994,6 @@ if (pdfBtnText) {
 }
 
 // Function to open the Invitation Card Modal Popup
-
-
 function openInviteModal(title, pdfPath, btnElement) {
     // अगर बटन पहले से disabled है तो आगे न बढ़ें
     if (btnElement && btnElement.disabled) return;
@@ -1012,24 +1009,57 @@ function openInviteModal(title, pdfPath, btnElement) {
     const modalTitle = document.getElementById('modalTitle');
     const modalCardImg = document.getElementById('modalCardImg');
     const modalDownloadBtn = document.getElementById('modalDownloadBtn');
+    const imgContainer = document.getElementById('imgContainer'); // लोडिंग स्पिनर कंटेनर रेफ़रेंस
 
     if (!modal) return;
 
     const translatedTitle = window.t ? window.t(title) : title;
     const isHindi = window.getLang && window.getLang() === 'hi';
-    const labelText = isHindi ? (window.t ? window.t("आमंत्रण") : "आमंत्रण") : "Invitation";
     
-    if (modalTitle) modalTitle.innerText = translatedTitle + " " + labelText;
+    // 🔹 गैलरी के नए टाइटल्स की सूची (जो गैलरी की तस्वीरों के लिए हैं)
+    const galleryTitles = [
+        'Magical Moment', 'Timeless Grace', 'Pure Enchantment', 
+        'Eternally Cherished', 'Royal Whispers', 'Golden Glow', 
+        'Heart\'s Melody', 'Sacred Bliss'
+    ];
+    
+    const isMemory = galleryTitles.includes(title);
+    
+    if (isMemory) {
+        if (modalTitle) modalTitle.innerText = translatedTitle;
+        if (modalDownloadBtn) {
+            modalDownloadBtn.innerHTML = isHindi ? "🔻 फोटो डाउनलोड करें" : "🔻 Download Photo";
+        }
+    } else {
+        const labelText = isHindi ? (window.t ? window.t("आमंत्रण") : "आमंत्रण") : "Invitation";
+        if (modalTitle) modalTitle.innerText = translatedTitle + " " + labelText;
+        if (modalDownloadBtn) {
+            modalDownloadBtn.innerHTML = isHindi ? "🔻 आमंत्रण डाउनलोड करें" : "🔻 Download Invite";
+        }
+    }
     
     if (modalDownloadBtn) {
         modalDownloadBtn.href = pdfPath;
-        
-        // 🔹 यह लाइन जोड़ने से ब्राउज़र फाइल को सीधे डाउनलोड करेगा (ओपन नहीं करेगा)
         modalDownloadBtn.setAttribute('download', ''); 
     }
 
     const imagePath = pdfPath.replace('.pdf', '.webp').replace('.pdf', '.jpg'); 
-    if (modalCardImg) modalCardImg.src = imagePath;
+
+    // मॉडल खुलते ही लोडिंग स्पिनर बैकग्राउंड दिखाएं
+    if (imgContainer) {
+        imgContainer.classList.add('loading');
+    }
+
+    // इमेज लोड होने पर स्पिनर हटा दें
+    if (modalCardImg) {
+        modalCardImg.onload = function() {
+            if (imgContainer) imgContainer.classList.remove('loading');
+        };
+        modalCardImg.onerror = function() {
+            if (imgContainer) imgContainer.classList.remove('loading');
+        };
+        modalCardImg.src = imagePath;
+    }
 
     modal.style.display = 'flex';
     modal.classList.add('active');
@@ -1040,12 +1070,16 @@ function openInviteModal(title, pdfPath, btnElement) {
 function closeInviteModal() {
     const modal = document.getElementById('inviteModal');
     const modalCardImg = document.getElementById('modalCardImg'); 
+    const imgContainer = document.getElementById('imgContainer');
     
     if (modal) {
         modal.style.display = 'none';
         modal.classList.remove('active');
         if (modalCardImg) {
             modalCardImg.src = '';
+        }
+        if (imgContainer) {
+            imgContainer.classList.remove('loading');
         }
         document.body.style.overflow = ''; // Restore background scrolling
 
@@ -1065,4 +1099,17 @@ window.addEventListener('click', function(e) {
     if (e.target === modal) {
         closeInviteModal();
     }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const galleryImgs = document.querySelectorAll('.royal-polaroid-card img');
+    galleryImgs.forEach(img => {
+        if (img.complete) {
+            img.style.opacity = '1';
+        } else {
+            img.onload = () => {
+                img.style.opacity = '1';
+            };
+        }
+    });
 });

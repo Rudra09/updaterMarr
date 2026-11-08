@@ -3898,6 +3898,9 @@ html.lang-hi .cursive-name, html.lang-hi .hero-tagline { line-height: 1.4; } */
     border-top: 1px dashed rgba(212, 175, 55, 0.4);
     background: rgba(255, 255, 255, 0.6);
 }
+.invite-modal-footer button {
+  background: linear-gradient(105deg, rgba(221, 171, 75, 0.97) 0%, rgba(255, 252, 252, 0.906) 100%);
+}
 
 @keyframes fadeInModal {
     from { opacity: 0; }
@@ -3912,7 +3915,7 @@ html.lang-hi .cursive-name, html.lang-hi .hero-tagline { line-height: 1.4; } */
 @media (max-width: 500px) {
   html.lang-hi #modalDownloadBtn
   {
-    padding:2px;
+    padding:3px;
     line-height: normal;
   }
   .invite-modal-footer

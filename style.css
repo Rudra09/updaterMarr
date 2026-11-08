@@ -1489,8 +1489,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: .5rem;
-    padding-top: 1rem;
+    /* margin-top: .5rem;
+    padding-top: 1rem; */
     gap: 14px;
 }
 
@@ -1507,8 +1507,9 @@ section {
     font-weight: 700;
     letter-spacing: 1.2px;
     text-transform: uppercase;
-    padding: 0.65rem 1.8rem;
-    border: none;
+    padding: 0.55rem 1.8rem;
+    border-radius: 20px;
+    border: 1px solid #d4af37 !important;
     border-radius: 50px;
     cursor: pointer;
     box-shadow: 0 4px 15px rgba(197, 160, 89, 0.3);
@@ -1560,7 +1561,7 @@ html.lang-hi .btn-gold-pdf {
         width: 100%;                  /* Full width container me fit hone ke liye */
         max-width: 320px;             /* Limit max width */
         padding: 0.65rem 1.1rem;      /* Compact padding */
-        font-size: 0.65rem;            /* Reduced font size */
+        font-size: 0.75rem;            /* Reduced font size */
         letter-spacing: 0.8px;
         gap: 0.5rem;                  /* Icon aur text ke beech ka space kam */
         justify-content: center;
@@ -3288,7 +3289,7 @@ footer .hashtag {
 }
 
 /*  Container styling for the watermark badge  */
-.creator-watermark-badge {
+/* .creator-watermark-badge {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -3316,7 +3317,7 @@ footer .hashtag {
 }
 
 /*  Metallic gold shining text styling for RK DEEPAK  */
-.creator-name {
+/* .creator-name {
   font-family: "Playfair Display", serif;
   font-weight: 600;
   font-size: 0.98rem;
@@ -3334,10 +3335,10 @@ footer .hashtag {
   -webkit-text-fill-color: transparent;
   animation: goldShine 3.5s linear infinite;
   text-transform: uppercase;
-}
+} */
 
 /*  Moving light streak across the badge background  */
-.creator-watermark-badge::before {
+/* .creator-watermark-badge::before {
   content: "";
   position: absolute;
   top: -50%;
@@ -3353,28 +3354,28 @@ footer .hashtag {
   transform: rotate(30deg);
   animation: backgroundGleam 4s ease-in-out infinite;
   pointer-events: none;
-}
+} */
 
 /*  Sparkle icon subtle scaling animation  */
-.watermark-icon {
+/* .watermark-icon {
   font-size: 0.95rem;
   filter: drop-shadow(0 0 4px rgba(255, 215, 0, 0.6));
   animation: sparklePulse 2s ease-in-out infinite alternate;
-}
+} */
 
 /*  Hover effect  */
-.creator-watermark-badge:hover {
+/* .creator-watermark-badge:hover {
   transform: translateY(-2px);
   border-color: #ffd700;
   box-shadow:
     0 6px 25px rgba(0, 0, 0, 0.8),
     0 0 20px rgba(212, 175, 55, 0.5);
-}
+} */
 
 /*  --- Keyframe Animations ---  */
 
 /*  Text metallic gradient motion  */
-@keyframes goldShine {
+/* @keyframes goldShine {
   0% {
     background-position: 200% center;
   }
@@ -3382,10 +3383,10 @@ footer .hashtag {
   100% {
     background-position: -200% center;
   }
-}
+} */
 
 /*  Diagonal light sheen effect  */
-@keyframes backgroundGleam {
+/* @keyframes backgroundGleam {
   0% {
     transform: translateX(-100%) rotate(30deg);
   }
@@ -3393,10 +3394,10 @@ footer .hashtag {
   100% {
     transform: translateX(100%) rotate(30deg);
   }
-}
+} */
 
 /*  Sparkle glow pulse  */
-@keyframes sparklePulse {
+/* @keyframes sparklePulse {
   0% {
     opacity: 0.5;
     transform: scale(0.9);
@@ -3406,10 +3407,10 @@ footer .hashtag {
     opacity: 1;
     transform: scale(1.15);
   }
-}
+} */
 
 /*  --- Mobile Responsive Scaling (500px and below) ---  */
-@media screen and (max-width: 500px) {
+/* @media screen and (max-width: 500px) {
   .creator-watermark-badge {
     padding: 6px 14px !important;
     margin: 15px auto !important;
@@ -3426,7 +3427,7 @@ footer .hashtag {
   .watermark-icon {
     font-size: 0.75rem !important;
   }
-}
+} */ */
 
 /*  Container for the Sacred Vows background hearts  */
 #vowsFloatingContainer {
@@ -3797,4 +3798,127 @@ html.lang-hi .nav-links
 
 /* html.lang-hi h1, html.lang-hi h2, html.lang-hi h3, html.lang-hi p,
 html.lang-hi .cursive-name, html.lang-hi .hero-tagline { line-height: 1.4; } */
+
+
+/* Royal Invitation Card Modal Popup Styling */
+/* ==========================================
+   ROYAL INVITATION CARD MODAL POPUP STYLES
+   ========================================== */
+.invite-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(20, 5, 8, 0.85);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    padding: 15px;
+    animation: fadeInModal 0.3s ease-in-out forwards;
+}
+
+.invite-modal-overlay.active {
+    display: flex;
+}
+
+.invite-modal-content {
+    background: linear-gradient(135deg, #fffdf9 0%, #fef5e7 100%);
+    border: 2px solid var(--primary-gold);
+    border-radius: 20px;
+    max-width: 550px;
+    width: 100%;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 25px rgba(212, 175, 55, 0.4);
+    overflow: hidden;
+    animation: popScaleIn 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.invite-modal-close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    background: rgba(88, 24, 31, 0.1);
+    color: var(--deep-maroon);
+    border: 1px solid var(--primary-gold);
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    z-index: 2;
+    transition: all 0.2s ease;
+}
+
+.invite-modal-close:hover {
+    background: var(--deep-maroon);
+    color: #ffd700;
+}
+
+.invite-modal-title {
+    font-family: 'Playfair Display', serif;
+    color: var(--deep-maroon);
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 18px 20px 10px 20px;
+    border-bottom: 1px dashed rgba(212, 175, 55, 0.4);
+}
+
+.invite-modal-body {
+    padding: 15px;
+    overflow-y: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.invite-modal-body img {
+    max-width: 100%;
+    max-height: 60vh;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    object-fit: contain;
+}
+
+.invite-modal-footer {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 14px 20px;
+    border-top: 1px dashed rgba(212, 175, 55, 0.4);
+    background: rgba(255, 255, 255, 0.6);
+}
+
+@keyframes fadeInModal {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes popScaleIn {
+    from { transform: scale(0.85); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@media (max-width: 500px) {
+  html.lang-hi #modalDownloadBtn
+  {
+    padding:2px;
+    line-height: normal;
+  }
+  .invite-modal-footer
+  {
+    flex-direction: column;
+    
+  }
+}
 

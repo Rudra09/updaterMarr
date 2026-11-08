@@ -987,10 +987,82 @@ function downloadInvitationPDF() {
 
 // Dynamic Text Update Helper (Integrated with your existing language toggle)
 
-
 const pdfBtnText = document.querySelector('.pdf-btn-text');
 if (pdfBtnText) {
     pdfBtnText.textContent = currentLang === 'hi' 
         ? pdfBtnText.getAttribute('data-hi') 
         : pdfBtnText.getAttribute('data-en');
 }
+
+// Function to open the Invitation Card Modal Popup
+
+
+function openInviteModal(title, pdfPath, btnElement) {
+    // अगर बटन पहले से disabled है तो आगे न बढ़ें
+    if (btnElement && btnElement.disabled) return;
+    
+    if (btnElement) {
+        btnElement.disabled = true;
+        btnElement.style.opacity = '0.6';
+        btnElement.style.cursor = 'not-allowed';
+        window._lastClickedInviteBtn = btnElement;
+    }
+
+    const modal = document.getElementById('inviteModal');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalCardImg = document.getElementById('modalCardImg');
+    const modalDownloadBtn = document.getElementById('modalDownloadBtn');
+
+    if (!modal) return;
+
+    const translatedTitle = window.t ? window.t(title) : title;
+    const isHindi = window.getLang && window.getLang() === 'hi';
+    const labelText = isHindi ? (window.t ? window.t("आमंत्रण") : "आमंत्रण") : "Invitation";
+    
+    if (modalTitle) modalTitle.innerText = translatedTitle + " " + labelText;
+    
+    if (modalDownloadBtn) {
+        modalDownloadBtn.href = pdfPath;
+        
+        // 🔹 यह लाइन जोड़ने से ब्राउज़र फाइल को सीधे डाउनलोड करेगा (ओपन नहीं करेगा)
+        modalDownloadBtn.setAttribute('download', ''); 
+    }
+
+    const imagePath = pdfPath.replace('.pdf', '.webp').replace('.pdf', '.jpg'); 
+    if (modalCardImg) modalCardImg.src = imagePath;
+
+    modal.style.display = 'flex';
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+// Function to close the Modal
+function closeInviteModal() {
+    const modal = document.getElementById('inviteModal');
+    const modalCardImg = document.getElementById('modalCardImg'); 
+    
+    if (modal) {
+        modal.style.display = 'none';
+        modal.classList.remove('active');
+        if (modalCardImg) {
+            modalCardImg.src = '';
+        }
+        document.body.style.overflow = ''; // Restore background scrolling
+
+        // मॉडल बंद होते ही बटन को वापस क्लिक करने योग्य (enabled) बना दें
+        if (window._lastClickedInviteBtn) {
+            window._lastClickedInviteBtn.disabled = false;
+            window._lastClickedInviteBtn.style.opacity = '1';
+            window._lastClickedInviteBtn.style.cursor = 'pointer';
+            window._lastClickedInviteBtn = null;
+        }
+    }
+}
+
+// Close Modal when clicking outside content area
+window.addEventListener('click', function(e) {
+    const modal = document.getElementById('inviteModal');
+    if (e.target === modal) {
+        closeInviteModal();
+    }
+});

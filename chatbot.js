@@ -378,25 +378,25 @@ opacity:0;transform:translateY(14px) scale(.97);pointer-events:none;transition:o
         const d = add('bot', ans.text);
         
         if (ans.action === 'pdf') {
-          const sText = lang() === 'hi' ? '📥 संगीत आमंत्रण (PDF)' : '📥 Sangeet Invite';
-          const hText = lang() === 'hi' ? '📥 हल्दी आमंत्रण (PDF)' : '📥 Haldi Invite';
-          const wText = lang() === 'hi' ? '📥 विवाह आमंत्रण (PDF)' : '📥 Wedding Invite';
+          const sText = lang() === 'hi' ? '📥 संगीत आमंत्रण' : '📥 Sangeet Invite';
+          const hText = lang() === 'hi' ? '📥 हल्दी आमंत्रण' : '📥 Haldi Invite';
+          const wText = lang() === 'hi' ? '📥 विवाह आमंत्रण' : '📥 Wedding Invite';
 
           const b1 = document.createElement('a');
           b1.className = 'wbot-link';
-          b1.href = 'assets/invitepdf/Sangeet.pdf';
+          b1.href = 'assets/invitepdf/Sangeet.webp';
           b1.download = "";
           b1.textContent = sText;
 
           const b2 = document.createElement('a');
           b2.className = 'wbot-link';
-          b2.href = 'assets/invitepdf/Haldi.pdf';
+          b2.href = 'assets/invitepdf/Haldi.webp';
           b2.download = "";
           b2.textContent = hText;
 
           const b3 = document.createElement('a');
           b3.className = 'wbot-link';
-          b3.href = 'assets/invitepdf/Wedding.pdf';
+          b3.href = 'assets/invitepdf/Wedding.webp';
           b3.download = "";
           b3.textContent = wText;
 

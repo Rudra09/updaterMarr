@@ -72,6 +72,7 @@
   ["A Note from the Family", "परिवार की ओर से संदेश"],
   ["\"Like the sacred union of Ram and Sita, may this journey be filled with truth, devotion, and unending joy. We eagerly await your gracious presence to bless Abhishek and Priya.\"", "\"राम और सीता के पवित्र मिलन की तरह, यह यात्रा सत्य, भक्ति और अनंत आनंद से भरी रहे। अभिषेक और प्रिया को आशीर्वाद देने के लिए हम आपकी गरिमामयी उपस्थिति की प्रतीक्षा कर रहे हैं।\""],
   ["Counting Every Heartbeat", "हर धड़कन की गिनती"],
+
   ["Days", "दिन"],
   ["Hours", "घंटे"],
   ["Minutes", "मिनट"],
@@ -93,7 +94,12 @@
   ["Sacred Union", "पवित्र मिलन"],
   ["Wedding Ceremony", "विवाह समारोह"],
   ["8:00 PM · 25 Nov 2026", "रात 8:00 बजे · 25 नवंबर 2026"],
-  ["Download Invitation Card (PDF)", "निमंत्रण कार्ड (PDF) डाउनलोड करें"],
+  ["🔻Download Invite", "🔻आमंत्रण डाउनलोड करें"],
+  ["Close", "बंद करें"],
+  ["Invitation Card", "निमंत्रण कार्ड"],
+  ["Invitation Card Preview", "निमंत्रण कार्ड पूर्वावलोकन"],
+  ["आमंत्रण", "आमंत्रण"],
+// ["Invitation", "आमंत्रण"]
   ["Sacred pheras, eternal vows, and divine blessings under the floral mandap.", "फूलों के मंडप के नीचे पवित्र फेरे, शाश्वत वचन और दिव्य आशीर्वाद।"],
   ["The Sacred 7 Vows & Varmala", "पवित्र सात वचन और वरमाला"],
   ["Walk through the authentic Saptapadi vows with Abhishek & Priya step by step!", "अभिषेक और प्रिया के साथ सप्तपदी के सात वचनों को कदम-दर-कदम देखें!"],

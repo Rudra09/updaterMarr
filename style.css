@@ -3347,18 +3347,18 @@ footer .hashtag {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /*  Soft smooth blur combined with bright wedding styling  */
+ 
   filter: brightness(1.08) contrast(1.05) saturate(1.15)
     drop-shadow(0 0 8px rgba(255, 215, 0, 0.3));
 }
 
 /*  Container styling for the watermark badge  */
-/* .creator-watermark-badge {
+.creator-watermark-badge {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 10px 22px;
+  padding: 6px 18px;
   margin: 25px auto;
   background: linear-gradient(
     135deg,
@@ -3371,7 +3371,7 @@ footer .hashtag {
     0 4px 20px rgba(0, 0, 0, 0.6),
     0 0 12px rgba(212, 175, 55, 0.25);
   font-family: "Poppins", sans-serif;
-  font-size: 0.92rem;
+  font-size: 0.78rem;
   color: #e0e0e0;
   letter-spacing: 0.8px;
   position: relative;
@@ -3381,10 +3381,10 @@ footer .hashtag {
 }
 
 /*  Metallic gold shining text styling for RK DEEPAK  */
-/* .creator-name {
+.creator-name {
   font-family: "Playfair Display", serif;
   font-weight: 600;
-  font-size: 0.98rem;
+  font-size: 0.78rem;
   letter-spacing: 1.5px;
   background: linear-gradient(
     110deg,
@@ -3399,10 +3399,10 @@ footer .hashtag {
   -webkit-text-fill-color: transparent;
   animation: goldShine 3.5s linear infinite;
   text-transform: uppercase;
-} */
+} 
 
 /*  Moving light streak across the badge background  */
-/* .creator-watermark-badge::before {
+ .creator-watermark-badge::before {
   content: "";
   position: absolute;
   top: -50%;
@@ -3418,28 +3418,28 @@ footer .hashtag {
   transform: rotate(30deg);
   animation: backgroundGleam 4s ease-in-out infinite;
   pointer-events: none;
-} */
+} 
 
 /*  Sparkle icon subtle scaling animation  */
-/* .watermark-icon {
+ .watermark-icon {
   font-size: 0.95rem;
   filter: drop-shadow(0 0 4px rgba(255, 215, 0, 0.6));
   animation: sparklePulse 2s ease-in-out infinite alternate;
 } */
 
 /*  Hover effect  */
-/* .creator-watermark-badge:hover {
+.creator-watermark-badge:hover {
   transform: translateY(-2px);
   border-color: #ffd700;
   box-shadow:
     0 6px 25px rgba(0, 0, 0, 0.8),
     0 0 20px rgba(212, 175, 55, 0.5);
-} */
+} 
 
 /*  --- Keyframe Animations ---  */
 
 /*  Text metallic gradient motion  */
-/* @keyframes goldShine {
+ @keyframes goldShine {
   0% {
     background-position: 200% center;
   }
@@ -3447,10 +3447,10 @@ footer .hashtag {
   100% {
     background-position: -200% center;
   }
-} */
+} 
 
 /*  Diagonal light sheen effect  */
-/* @keyframes backgroundGleam {
+ @keyframes backgroundGleam {
   0% {
     transform: translateX(-100%) rotate(30deg);
   }
@@ -3458,10 +3458,10 @@ footer .hashtag {
   100% {
     transform: translateX(100%) rotate(30deg);
   }
-} */
+} 
 
 /*  Sparkle glow pulse  */
-/* @keyframes sparklePulse {
+ @keyframes sparklePulse {
   0% {
     opacity: 0.5;
     transform: scale(0.9);
@@ -3471,10 +3471,10 @@ footer .hashtag {
     opacity: 1;
     transform: scale(1.15);
   }
-} */
+} 
 
 /*  --- Mobile Responsive Scaling (500px and below) ---  */
-/* @media screen and (max-width: 500px) {
+ @media screen and (max-width: 500px) {
   .creator-watermark-badge {
     padding: 6px 14px !important;
     margin: 15px auto !important;
@@ -3484,14 +3484,14 @@ footer .hashtag {
   }
 
   .creator-name {
-    font-size: 0.8rem !important;
+    font-size: 0.6rem !important;
     letter-spacing: 1px !important;
   }
 
   .watermark-icon {
     font-size: 0.75rem !important;
   }
-} */ 
+} 
 
 /*  Container for the Sacred Vows background hearts  */
 #vowsFloatingContainer {

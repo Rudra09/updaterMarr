@@ -168,7 +168,7 @@
   ["High-resolution royal photo downloaded successfully!", "उच्च गुणवत्ता वाली शाही फोटो सफलतापूर्वक डाउनलोड हो गई!"],
   ["25 November 2026 · GM Resort", "25 नवंबर 2026 · जी.एम. रिसॉर्ट"],
   ["We eagerly await your blessings and gracious presence", "हम आपके आशीर्वाद और गरिमामयी उपस्थिति की प्रतीक्षा करते हैं"],
-  ["Crafted & Developed by", "निर्माण एवं विकास"],
+  ["Crafted & Developed by", "डिज़ाइनर एवं निर्माता"],
   ["🎵 Play Music", "🎵 संगीत चलाएँ"],
   ["🎶 Pause Music", "🎶 संगीत रोकें"],
   ["🎉 Congratulations! 🎉", "🎉 बधाई हो! 🎉"],

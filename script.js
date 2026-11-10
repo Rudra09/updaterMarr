@@ -15,8 +15,7 @@ const PERF = IS_LOW_END && IS_MOBILE ? 0.5 : 1;
         new IntersectionObserver(([en]) => document.body.classList.toggle('hero-out', !en.isIntersecting)).observe(hero);
     });
 })();
-
-// desktop: decode lazy photos in the background so scrolling stays smooth
+// decode lazy photos in the background so scrolling stays smooth
 window.addEventListener('load', () => {
     if (IS_MOBILE || IS_LOW_END) return;
     setTimeout(() => {
@@ -32,7 +31,7 @@ window.addEventListener('load', () => {
     }, 3000);
 });
 
-// Load hero slides 2 & 3 only after the page is ready (keeps first paint fast)
+// Load hero slides 2 & 3 only after the page is ready
 window.addEventListener('load', () => {
     setTimeout(() => {
         document.querySelectorAll('.hero-bg[data-bg]').forEach(el => {
@@ -109,7 +108,7 @@ function createFallingPetals(containerElement, count, isSection = false) {
         petal.style.height = `${size * 1.4}px`;
         petal.style.left = `${Math.random() * 98}%`;
 
-        // Distribute evenly between Golden and Silver
+      
         const isGolden = i % 2 === 0;
         if (isGolden) {
             petal.style.background = goldenPetalGradients[Math.floor(Math.random() * goldenPetalGradients.length)];
@@ -142,7 +141,7 @@ function afterLoad(fn) {
 }
 
 afterLoad(() => {
-    // Populate Global Floating Bubbles (Gold & Silver) Across Entire Website
+    // Populate Global Floating Bubbles  Across Entire Website
     const globalBubblesContainer = document.getElementById('globalBubblesContainer');
     const globalBubbleCount = Math.round((window.innerWidth > 992 ? 45 : 30) * PERF);
     for (let i = 0; i < globalBubbleCount; i++) {
@@ -287,7 +286,7 @@ class TwinklingStarParticle {
 }
 
 let sparkParticles = [];
-const MAX_PARTICLES = IS_LOW_END ? 160 : 350; // Cap particle count to eliminate lag over time
+const MAX_PARTICLES = IS_LOW_END ? 160 : 350; 
 
 function createTwinklingBurst(customX, customY) {
     if (canvas.width === 0 || canvas.height === 0) return;
@@ -443,7 +442,7 @@ setInterval(() => {
 document.addEventListener('DOMContentLoaded', () => {
     const audio = document.getElementById('weddingAudio');
 
-    // Create floating music toggle button
+    //  floating music toggle button
     const musicBtn = document.createElement('button');
     musicBtn.id = 'bgMusicToggle';
     musicBtn.innerHTML = tr('🎵 Play Music');
@@ -567,7 +566,7 @@ function nextPheraStep() {
         badge.innerText = tr(`SACRED PHERA 1 OF 7`);
         title.innerText = tr(stepData.title);
         vow.innerText = tr(`"${stepData.vow}"`);
-        btn.innerText = tr(stepData.btnText); // This correctly says "Take 2nd Phera"
+        btn.innerText = tr(stepData.btnText); 
 
         fill.style.width = `${(1 / 7) * 100}%`;
         petalContainer.innerHTML = '';
@@ -786,16 +785,16 @@ function captureAndDownload() {
     const ctx = canvas.getContext('2d');
     const statusDiv = document.getElementById('statusMessage');
 
-    // High-definition square resolution
+    // HD resolution
     canvas.width = 1920;
     canvas.height = 1920;
     const w = canvas.width;
     const h = canvas.height;
 
-    // 1. Professional Studio Filter (Enhanced richness & clarity)
+    // Studio Filter 
     ctx.filter = 'brightness(1.15) contrast(1.15) saturate(1.12)';
 
-    // Robust Cover Math (Prevents stretching & keeps correct proportions)
+    //(Prevents stretching & keeps correct proportions)
     function drawCover(mediaElement, isVideo = false, isMirrored = false) {
         if (!mediaElement) return;
 
@@ -829,7 +828,7 @@ function captureAndDownload() {
         ctx.restore();
     }
 
-    // 2. Draw User Image (Camera, Upload, or Default Photo)
+    //  Draw User Image (Camera, Upload, or Default Photo)
     const isVideoMirrored = (currentFacingMode === 'user');
     if (activeSource === 'camera' && isCameraActive) {
         const video = document.getElementById('webcamVideo');
@@ -843,16 +842,16 @@ function captureAndDownload() {
         }
     }
 
-    // Reset filter for crisp frame overlay
+  
     ctx.filter = 'none';
 
-    // 3. Draw the Royal Prop Frame Overlay on top
+    //Draw the Royal Prop Frame Overlay on top
     const propElement = document.getElementById('propOverlayImg');
     if (propElement) {
         ctx.drawImage(propElement, 0, 0, w, h);
     }
 
-    // 4. Trigger High-Res Download
+    // Trigger High-Res Download
     const dataURL = canvas.toDataURL('image/png', 1.0);
     const downloadLink = document.createElement('a');
     downloadLink.download = 'Abhishek_Priya_Wedding_Memory.png';
@@ -879,7 +878,7 @@ function captureAndDownload() {
     setTimeout(hidePreloader, 4000);
 })();
 
-// Helper function to create and append a single heart with smooth movement
+// function to create and append a single heart with smooth movement
 function initVowsFloatingHearts() {
     const container = document.getElementById('vowsFloatingContainer');
     if (!container) return;
@@ -920,7 +919,7 @@ function createVowHeart(container, isSpawning = false) {
         ? `1.2s, ${Math.random() * 6 + 8}s`
         : `${Math.random() * 6 + 8}s`;
 
-    // Click event handler
+   
     heart.addEventListener('click', (e) => {
         const rect = container.getBoundingClientRect();
         const clickX = e.clientX - rect.left;
@@ -981,11 +980,11 @@ window.addEventListener('resize', initVowsFloatingHearts);
 //Invitation Card download button
 
 function downloadInvitationPDF() {
-    // Triggers native print-to-PDF window cleanly without pulling heavy libraries
+ 
     window.print();
 }
 
-// Dynamic Text Update Helper (Integrated with your existing language toggle)
+// Dynamic Text Update Helper
 const pdfBtnText = document.querySelector('.pdf-btn-text');
 if (pdfBtnText) {
     pdfBtnText.textContent = currentLang === 'hi' 
@@ -995,7 +994,7 @@ if (pdfBtnText) {
 
 // Function to open the Invitation Card Modal Popup
 function openInviteModal(title, pdfPath, btnElement) {
-    // अगर बटन पहले से disabled है तो आगे न बढ़ें
+    
     if (btnElement && btnElement.disabled) return;
     
     if (btnElement) {
@@ -1009,14 +1008,14 @@ function openInviteModal(title, pdfPath, btnElement) {
     const modalTitle = document.getElementById('modalTitle');
     const modalCardImg = document.getElementById('modalCardImg');
     const modalDownloadBtn = document.getElementById('modalDownloadBtn');
-    const imgContainer = document.getElementById('imgContainer'); // लोडिंग स्पिनर कंटेनर रेफ़रेंस
+    const imgContainer = document.getElementById('imgContainer'); 
 
     if (!modal) return;
 
     const translatedTitle = window.t ? window.t(title) : title;
     const isHindi = window.getLang && window.getLang() === 'hi';
     
-    // 🔹 गैलरी के नए टाइटल्स की सूची (जो गैलरी की तस्वीरों के लिए हैं)
+   
     const galleryTitles = [
         'Magical Moment', 'Timeless Grace', 'Pure Enchantment', 
         'Eternally Cherished', 'Royal Whispers', 'Golden Glow', 
@@ -1045,12 +1044,12 @@ function openInviteModal(title, pdfPath, btnElement) {
 
     const imagePath = pdfPath.replace('.pdf', '.webp').replace('.pdf', '.jpg'); 
 
-    // मॉडल खुलते ही लोडिंग स्पिनर बैकग्राउंड दिखाएं
+   
     if (imgContainer) {
         imgContainer.classList.add('loading');
     }
 
-    // इमेज लोड होने पर स्पिनर हटा दें
+   
     if (modalCardImg) {
         modalCardImg.onload = function() {
             if (imgContainer) imgContainer.classList.remove('loading');
@@ -1083,7 +1082,7 @@ function closeInviteModal() {
         }
         document.body.style.overflow = ''; // Restore background scrolling
 
-        // मॉडल बंद होते ही बटन को वापस क्लिक करने योग्य (enabled) बना दें
+        
         if (window._lastClickedInviteBtn) {
             window._lastClickedInviteBtn.disabled = false;
             window._lastClickedInviteBtn.style.opacity = '1';

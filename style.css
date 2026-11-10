@@ -49,7 +49,7 @@ body {
     overflow: hidden;
 }
 
-/*  Subtle Luxury Shimmer Texture Overlay  */
+/*   Shimmer Texture Overlay  */
 .preloader-overlay::before {
     content: '';
     position: absolute;
@@ -64,7 +64,7 @@ body {
     pointer-events: none;
 }
 
-/*  Perfect Centered Layout Wrapper  */
+/* Centered Layout Wrapper  */
 .preloader-content-wrap {
     display: flex;
     flex-direction: column;
@@ -77,7 +77,7 @@ body {
     width: 100%;
 }
 
-/*  Background Ambient Pulse Effect  */
+/*  Background Ambient Effect  */
 .preloader-bg-pulse {
     position: absolute;
     width: 380px;
@@ -88,7 +88,7 @@ body {
     z-index: 1;
 }
 
-/*  Couple Emoji Avatar Icon  */
+/*  Couple Emoji Avatar   */
 .preloader-couple-icon {
     font-size: 3.2rem;
     margin-bottom: 15px;
@@ -96,7 +96,7 @@ body {
     filter: drop-shadow(0 4px 12px rgba(212, 175, 55, 0.5));
 }
 
-/*  Metallic Gold-Maroon Gradient Title  */
+/*   Gold-Maroon Gradient Title  */
 .preloader-title {
     font-family: 'Playfair Display', serif;
     font-size: 2rem;
@@ -119,7 +119,7 @@ body {
     font-weight: 600;
 }
 
-/*  3D Metallic Gold & Silver Spinner Ring  */
+/*  Gold & Silver Spinner Ring  */
 .preloader-spinner {
     width: 48px;
     height: 48px;
@@ -210,7 +210,7 @@ h3 {
   align-items: center;
   justify-content: center;
   padding: 6px 16px;
-  /*  Increased vertical padding to center text vertically  */
+
   border-radius: 20px;
   background: rgba(0, 0, 0, 0.45);
   border: 1px solid rgba(212, 175, 55, 0.5);
@@ -223,7 +223,7 @@ h3 {
   font-weight: 600;
   letter-spacing: 0.5px;
   line-height: 1.2;
-  /*  Ensures text is properly centered inside the badge  */
+  
 }
 
 /*  Desktop default for Venue & Date  */
@@ -262,7 +262,7 @@ h3 {
 
 .mobile-break {
   display: none;
-  /*  Hidden on desktop  */
+ 
 }
 
 
@@ -270,7 +270,7 @@ h3 {
 @media (max-width: 500px) {
   .invite-banner-box {
     padding: 8px 12px !important;
-    /*  Balanced vertical spacing for mobile  */
+   
     max-width: 95vw;
   }
 
@@ -329,11 +329,11 @@ h3 {
   background: linear-gradient(
     105deg,
     #f5e6b3 0%,
-    /* Light Warm Champagne */ #fbf3d5 25%,
-    /* Bright Cream Gold */ #ffffff 45%,
-    /* Brilliant Pearl-Silver Shine */ #e3eaf5 55%,
-    /* Cool Soft Silver Tone */ #fbf3d5 75%,
-    /* Bright Cream Gold */ #f5e6b3 100% /* Light Warm Champagne */
+     #fbf3d5 25%,
+     #ffffff 45%,
+    #e3eaf5 55%,
+   #fbf3d5 75%,
+     #f5e6b3 100%
   );
   background-size: 230% auto;
   background-clip: text;
@@ -362,7 +362,7 @@ h3 {
 }
 
 @media (max-width: 480px) {
-  /*  Main Cursive Names (Kept large and on a single line)  */
+  
   .cursive-name {
     font-size: clamp(3.8rem) !important;
     white-space: nowrap;
@@ -372,10 +372,10 @@ h3 {
   }
 
    html.lang-hi .cursive-name {
-        font-size: 2.8rem !important; /* Hindi text ke liye perfect chhota size */
+        font-size: 2.8rem !important; 
         letter-spacing: 0px !important;
         word-break: keep-all !important;
-        white-space: normal !important; /* Taaki lamba naam wrap hokar screen ke andar fit ho jaye */
+        white-space: normal !important; 
     }
 
   
@@ -621,7 +621,7 @@ nav {
   font-size: 0.95rem;
   letter-spacing: 0.6px;
   color: #dfc88a;
-  /*  Warm Gold Base  */
+ 
   display: inline-block;
   transform-origin: center;
   animation: textPulseBreath 3s ease-in-out infinite;
@@ -636,9 +636,9 @@ nav {
 
   50% {
     transform: scale(1.03);
-    /*  Subtle text expansion  */
+  
     color: #fed622;
-    /*  Brightens up  */
+    
   }
 }
 
@@ -748,7 +748,7 @@ header.hero {
 
 .floating-ribbon-text {
   font-family: "Great Vibes", cursive;
-  font-size: 1.3rem; /* Chote mobile screens (< 756px) ke liye size kam kiya gaya hai */
+  font-size: 1.3rem; 
   color: #fff9db;
   text-shadow: 0 0 12px rgba(255, 215, 0, 0.95);
   letter-spacing: 1px;
@@ -1285,12 +1285,12 @@ section {
     height: 270px;
     border: 1px solid rgba(212, 175, 55, 0.4);
     
-    /* 🔹 डायनेमिक गोल्ड और सिल्वर ग्रेडिएंट (बड़ा साइज ताकि मूवमेंट दिखे) */
+  
     background: linear-gradient(
         135deg, 
         #f5ebd7 0%, 
-        #eed8a8ed 25%, /* रिच लाइट गोल्ड */
-        #dddde0 50%, /* क्लियर सिल्वर */
+        #eed8a8ed 25%, 
+        #dddde0 50%,
         #eed8a8ed 75%, 
         #f5ebd7 100%
     );
@@ -1298,7 +1298,7 @@ section {
     animation: flowGradientColors 4s ease infinite;
 }
 
-/* 🔹 रंगों के आपस में बहने (flow) का स्मूथ एनीमेशन */
+
 @keyframes flowGradientColors {
     0% {
         background-position: 0% 50%;
@@ -1326,19 +1326,19 @@ section {
     opacity: 1;
 }
 /*  FAMILY & FRIENDS SECTION  */
-/* 🔹 फैमिली और फ्रेंड्स फोटो फ्रेम के लिए शिमर और ग्रेडिएंट लोडिंग इफेक्ट */
+
 .squad-photo-frame {
     position: relative;
     overflow: hidden;
     border-radius: 8px;
     border: 1px solid rgba(212, 175, 55, 0.4);
     
-    /* 🔹 डायनेमिक गोल्ड और सिल्वर ग्रेडिएंट */
+   
   background: linear-gradient(
         135deg, 
         #f5ebd7 0%, 
-        #eed8a8ed 25%, /* रिच लाइट गोल्ड */
-        #e4e4e6e5 50%, /* क्लियर सिल्वर */
+        #eed8a8ed 25%, 
+        #e4e4e6e5 50%, 
         #eed8a8ed 75%, 
         #f5ebd7 100%
     );
@@ -1346,7 +1346,7 @@ section {
     animation: flowGradientColors 4s ease infinite;
 }
 
-/* 🔹 तस्वीरें लोड होने पर स्मूथ फेड-इन */
+
 .squad-photo-frame img {
     width: 100%;
     height: 100%;
@@ -1622,12 +1622,12 @@ html.lang-hi .btn-gold-pdf {
 
     /* PDF Button Size Reduction */
     .btn-gold-pdf {
-        width: 100%;                  /* Full width container me fit hone ke liye */
-        max-width: 320px;             /* Limit max width */
-        padding: 0.65rem 1.1rem;      /* Compact padding */
-        font-size: 0.75rem;            /* Reduced font size */
+        width: 100%;                
+        max-width: 320px;             
+        padding: 0.65rem 1.1rem;     
+        font-size: 0.75rem;           
         letter-spacing: 0.8px;
-        gap: 0.5rem;                  /* Icon aur text ke beech ka space kam */
+        gap: 0.5rem;                 
         justify-content: center;
     }
 
@@ -1950,7 +1950,7 @@ footer .hashtag {
   }
 }
 
-/* Unified Royal Golden Button Styling for both View Invite and View Map */
+
 /* Unified Royal Golden Button Styling for both View Invite and View Map */
 .link-btn {
     flex: 1 1 125px;
@@ -1959,8 +1959,8 @@ footer .hashtag {
     justify-content: center;
     gap: 6px;
     padding: 10px 16px;
-    background: linear-gradient(105deg, #ddab4bf7 0%, #ffffff 100%) !important; /* Forces the exact lighter cream-gold gradient */
-    color: var(--deep-maroon) !important;                                       /* Deep maroon text for high contrast */
+    background: linear-gradient(105deg, #ddab4bf7 0%, #ffffff 100%) !important;
+    color: var(--deep-maroon) !important;                                      
     border-radius: 20px;
     border: 1px solid #d4af37 !important;
     font-size: 0.78rem;
@@ -2511,7 +2511,7 @@ footer .hashtag {
 
 /*  Responsive typography fix for parent & family cards  */
 @media screen and (max-width: 600px) {
-  /*  Main Family Title (e.g., Garg Family)  */
+  
   .family-tab-content h2,
   .family-tab-content .family-title {
     font-size: 1.5rem !important;
@@ -2536,7 +2536,7 @@ footer .hashtag {
   .parents-card p,
   .parents-card div {
     font-size: 0.95rem !important;
-    /*  Reduces font size for clean single-line/compact fit  */
+  
     line-height: 1.4 !important;
     margin-top: 4px !important;
     margin-bottom: 4px !important;
@@ -2629,9 +2629,9 @@ footer .hashtag {
   left: 50% !important;
   transform: translateX(-50%) !important;
   white-space: nowrap !important;
-  /*  Forces crowns and text to stay on ONE single line  */
+ 
   font-size: 0.75rem !important;
-  /*  Slightly smaller font so it fits small phone screens  */
+ 
   padding: 5px 16px !important;
   line-height: 1.2 !important;
   border-bottom-left-radius: 12px !important;
@@ -2642,7 +2642,7 @@ footer .hashtag {
 @media (max-width: 768px) {
   .family-royal-card {
     padding-top: 40px !important;
-    /*  Ensures the top badge never overlaps the avatar circle  */
+    
   }
 }
 
@@ -2662,7 +2662,7 @@ footer .hashtag {
   .countdown-footer {
     display: inline-block !important;
     text-align: left !important;
-    /*  Aligns both lines uniformly relative to each other  */
+    
     max-width: 300px !important;
     margin: 0 auto !important;
     font-size: 0.95rem !important;
@@ -2801,7 +2801,7 @@ footer .hashtag {
   align-items: center;
   justify-content: center;
   gap: 40px;
-  /*  Adjust spacing between elements  */
+ 
 }
 
 /*  Ensure individual person items maintain equal layout bounds  */
@@ -2816,12 +2816,12 @@ footer .hashtag {
 @media (max-width: 576px) {
   #seven-pheras {
     padding: 50px 15px !important;
-    /*  Smaller side padding on phones  */
+  
   }
 
   #seven-pheras > div {
     padding: 20px 12px !important;
-    /*  Compact inner card padding  */
+  
     border-radius: 18px !important;
   }
 
@@ -3002,9 +3002,9 @@ footer .hashtag {
 .gold-heart-bg,
 [class*="heart"] {
     will-change: transform, opacity;
-    transform: translateZ(0); /*  Promotes to GPU hardware layer  */
-    pointer-events: none;     /*  Stops cursor hit-testing overhead  */
-    filter: drop-shadow(0 2px 5px rgba(212, 175, 55, 0.2)) !important; /*  Lighter drop shadow  */
+    transform: translateZ(0); 
+    pointer-events: none;    
+    filter: drop-shadow(0 2px 5px rgba(212, 175, 55, 0.2)) !important; 
 }
 
 /*  Optimize Main Card Composite Layer  */
@@ -3013,7 +3013,7 @@ footer .hashtag {
 .varmala-card-wrap {
     transform: translateZ(0);
     will-change: transform;
-    /*  Cleaned up composite box-shadow without heavy render passes  */
+   
     box-shadow:
         0 15px 35px -5px rgba(180, 145, 90, 0.2),
         inset 0 1px 2px rgba(255, 255, 255, 0.9) !important;
@@ -3157,13 +3157,13 @@ footer .hashtag {
   width: 100%;
   max-width: 420px;
   height: 420px;
-  /*  Square ratio  */
+ 
   margin: 15px auto;
 
-  /* background-size: calc(); */
-  /*  Ensures the whole couple image fits without cropping  */
+ 
+ 
   background-image: url("assets/final-Photoroom.webp");
-  /*  Put your default couple image here  */
+ 
   border-radius: 14px;
   overflow: hidden;
   border: 3px solid #d4af37;
@@ -3190,7 +3190,7 @@ footer .hashtag {
   top: 0;
   left: 0;
   z-index: 1;
-  /*  Video sits at the bottom layer  */
+  
 }
 
 #uploadedImgPreview {
@@ -3202,7 +3202,7 @@ footer .hashtag {
   top: 0;
   left: 0;
   z-index: 1;
-  /*  Uploaded photo sits at the bottom layer  */
+ 
 }
 
 .prop-overlay-element {
@@ -3654,6 +3654,7 @@ footer .hashtag {
 }
 
 .floating-vow-heart.spawning {
+  
   animation:
     heartFadeInSlow 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards,
     driftAllDirections linear infinite;
@@ -3793,8 +3794,8 @@ body.hero-out .cursive-name { animation-play-state: paused; }
 }
 #langToggle:active { transform: scale(0.95); }
 
-/* Hindi mode: Devanagari fonts (downloaded only when Hindi is chosen).
-   Letter-spacing is removed because it breaks joined Devanagari letters. */
+
+  /* Letter-spacing is removed because it breaks joined Devanagari letters. */
 html.lang-hi,
 html.lang-hi body,
 html.lang-hi * {
@@ -3849,9 +3850,7 @@ html.lang-hi .cursive-name, html.lang-hi .hero-tagline { line-height: 1.4; } */
 
 
 /* Royal Invitation Card Modal Popup Styling */
-/* ==========================================
-   ROYAL INVITATION CARD MODAL POPUP STYLES
-   ========================================== */
+
 .invite-modal-overlay {
     position: fixed;
     top: 0;
@@ -3999,10 +3998,9 @@ html.lang-hi .cursive-name, html.lang-hi .hero-tagline { line-height: 1.4; } */
     border-radius: 50%;
     animation: spinModalLoader 0.8s linear infinite;
     z-index: 1;
-    display: none; /* डिफ़ॉल्ट रूप से छुपा रहेगा */
+    display: none; 
 }
 
-/* जब इमेज लोड हो रही होगी, तब यह क्लास एक्टिव होगी */
 .modal-img-container.loading::before {
     display: block;
 }

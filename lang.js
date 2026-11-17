@@ -73,6 +73,14 @@
   ["\"Growing up together, cheering forever\"", "\"साथ बड़े हुए, हमेशा हौसला बढ़ाते रहे\""],
   ["From school days and early memories to this grand wedding mandap, these wonderful friends have shared every milestone.", "स्कूल के दिनों और शुरुआती यादों से लेकर इस भव्य विवाह मंडप तक, इन शानदार दोस्तों ने हर पड़ाव साझा किया है।"],
   ["🌟 Friends", "🌟 मित्र"],
+  [
+  "Bound by laughter, rooted in loyalty & dancing through every moment",
+  "हंसी से बंधे, वफादारी में रचे-बसे और हर पल को झूमकर जीते हुए"
+],
+[
+  "Standing right by your side to turn every single milestone into an unforgettable celebration of love and friendship.",
+  "प्यार और दोस्ती के हर पड़ाव को एक कभी न भूलने वाले जश्न में बदलने के लिए हमेशा आपके साथ।"
+],
   
   ["\"Unbreakable bonds & late-night sangeet rehearsals\"", "\"अटूट बंधन और देर रात की संगीत रिहर्सल\""],
   ["Stealing the spotlight with rhythmic dance moves, joyful laughter, and bringing legendary energy to every celebration.", "लयबद्ध नृत्य और आनंदमयी हँसी से सबका ध्यान खींचते और हर उत्सव में जबरदस्त ऊर्जा भरते हुए।"],
